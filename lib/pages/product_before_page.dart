@@ -1,14 +1,14 @@
 import 'package:exercise/widgets/app_large_text.dart';
 import 'package:exercise/widgets/responsive_circle.dart';
 import 'package:flutter/material.dart';
-class MyPage extends StatefulWidget {
-  const MyPage({Key? key}) : super(key: key);
+class ProductBeforePage extends StatefulWidget {
+  const ProductBeforePage({Key? key}) : super(key: key);
 
   @override
-  State<MyPage> createState() => _MyPageState();
+  State<ProductBeforePage> createState() => _ProductBeforePageState();
 }
 
-class _MyPageState extends State<MyPage> {
+class _ProductBeforePageState extends State<ProductBeforePage> {
   @override
   Widget build(BuildContext context) {
     onTap(){
@@ -32,17 +32,39 @@ class _MyPageState extends State<MyPage> {
 
           ),
           Expanded(child: Container()),
-          Row(
+         Row(
             children: [
               Container(
-                child: ResponsiveCircle(width: 20, height: 20,),
+                height: 300,
+                padding: const EdgeInsets.only(left: 10),
+                child: ResponsiveCircle(width: 10, height: 10,),
               ),
               Expanded(child: Container()),
               Container(
-                child: ResponsiveCircle(width: 40, height: 40, color: onTap(),),
-              ),
-              Container(
-                child: ResponsiveCircle(width: 40, height: 40, color: onTap(),),
+                margin: const EdgeInsets.only(right: 30),
+                child: Row(
+                    children:[
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: const BoxDecoration(
+                            color: Colors.grey,
+                            shape: BoxShape.circle
+                        ),
+                        child: const Icon(Icons.arrow_back, color: Colors.white,),
+                      ),
+                      const SizedBox(width: 10,),
+                      Container(
+                        height: 50,
+                        width: 50,
+                        decoration: const BoxDecoration(
+                          color: Colors.red,
+                          shape: BoxShape.circle
+                        ),
+                        child: const Icon(Icons.arrow_forward, color: Colors.white,),
+                      )
+                    ]
+                ),
               ),
             ],
           )
