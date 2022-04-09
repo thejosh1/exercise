@@ -11,22 +11,19 @@ class ProductBeforePage extends StatefulWidget {
 class _ProductBeforePageState extends State<ProductBeforePage> {
   @override
   Widget build(BuildContext context) {
-    onTap(){
-      return Colors.grey;
-    }
     return Scaffold(
       body: Column(
         children: [
           Container(
-              margin: const EdgeInsets.only(left: 20, top: 30,),
+              margin: const EdgeInsets.only(left: 20, top: 50,),
               child: Row(
                 children: [
-                  Icon(Icons.menu),
+                  const Icon(Icons.menu),
                   Container(
                     margin: const EdgeInsets.only(left: 60, right: 60),
                     child: AppLargeText(text: "Collections", color: Colors.red, size: 30,),
                   ),
-                  Icon(Icons.search)
+                  const Icon(Icons.search)
                 ],
               )
 

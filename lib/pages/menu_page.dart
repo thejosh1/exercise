@@ -8,14 +8,14 @@ class MenuPage extends StatelessWidget {
     return Scaffold(
       drawer: Drawer(
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
               topRight: Radius.circular(20),
               bottomRight: Radius.circular(20)
             )
           ),
           child: ListView(
-            children: [
+            children: const [
               DrawerHeader(child: null,),
               ListTile(),
               ListTile(),

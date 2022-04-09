@@ -23,7 +23,7 @@ class _DragAnimationsState extends State<DragAnimations> {
           ),
           child: Row(
             children: [
-              Icon(Icons.menu),
+              const Icon(Icons.menu),
               Container(
                 margin: const EdgeInsets.only(left: 60, right: 60),
                 child: AppLargeText(
@@ -32,13 +32,13 @@ class _DragAnimationsState extends State<DragAnimations> {
                   size: 30,
                 ),
               ),
-              Icon(Icons.search)
+              const Icon(Icons.search)
             ],
           )
       ),
               Container(
                 padding: const EdgeInsets.only(left: 20),
-                height: 400,
+                height: 200,
                 width: double.maxFinite,
                 child: ListView.builder(
                     itemCount: 3,
@@ -48,8 +48,8 @@ class _DragAnimationsState extends State<DragAnimations> {
                         child: Stack(
                           children: [
                             Positioned(
-                              width: 250,
-                              height: 150,
+                              width: 150,
+                              height: 100,
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.grey.withOpacity(0.5),
@@ -71,7 +71,7 @@ class _DragAnimationsState extends State<DragAnimations> {
                                         Container(
                                           width: 5,
                                           height: 5,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                             color: Colors.red,
                                             shape: BoxShape.circle
                                           ),
@@ -79,7 +79,7 @@ class _DragAnimationsState extends State<DragAnimations> {
                                         Container(
                                           width: 5,
                                           height: 5,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                               color: Colors.grey,
                                               shape: BoxShape.circle
                                           ),
@@ -87,7 +87,7 @@ class _DragAnimationsState extends State<DragAnimations> {
                                         Container(
                                           width: 5,
                                           height: 5,
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                               color: Colors.grey,
                                               shape: BoxShape.circle
                                           ),
@@ -98,7 +98,7 @@ class _DragAnimationsState extends State<DragAnimations> {
                                 )
                             ),
                             Align(
-                              alignment: Alignment(0.7, -0.3),
+                              alignment: const Alignment(0.7, -0.3),
                               child: Positioned(
                                   child: Column(
                                     children: [
@@ -122,14 +122,14 @@ class _DragAnimationsState extends State<DragAnimations> {
                   Container(
                     height: 60,
                     width: double.maxFinite,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.red,
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(20), bottomLeft: Radius.circular(20))
                     ),
                     child: Row(
                       children: [
                         AppText(text: "Next", color: Colors.white,),
-                        Icon(Icons.arrow_forward_sharp, color: Colors.white,)
+                        const Icon(Icons.arrow_forward_sharp, color: Colors.white,)
                       ],
                     ),
                   )

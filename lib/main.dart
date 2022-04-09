@@ -1,6 +1,4 @@
-import 'package:exercise/pages/collection_page.dart';
 import 'package:exercise/pages/main_page.dart';
-import 'package:exercise/pages/product_before_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +18,10 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.red,
       ),
-      home: const ProductBeforePage(),
+      home: const Scaffold(
+          extendBody: true,
+          body: MainPage()
+      ),
     );
   }
 }
