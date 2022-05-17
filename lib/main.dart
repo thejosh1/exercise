@@ -1,11 +1,4 @@
-import 'package:exercise/pages/drag_animations.dart';
-import 'package:exercise/pages/home_page.dart';
-import 'package:exercise/pages/main_page.dart';
-import 'package:exercise/pages/product_after_page.dart';
-import 'package:exercise/pages/product_before_page.dart';
-import 'package:exercise/pages/tracking_page.dart';
-import 'package:exercise/pages/welcome_page2.dart';
-import 'package:exercise/pages/welcome_page3.dart';
+import 'package:exercise/pages/collection_page.dart';
 
 import 'package:flutter/material.dart';
 
@@ -28,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           extendBody: true,
-          body:DragAnimations()
+          body:CollectionsPage()
       ),
     );
   }
