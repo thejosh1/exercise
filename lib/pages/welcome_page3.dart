@@ -14,9 +14,9 @@ class WelcomePage3 extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              margin: const EdgeInsets.only(left: 100, right: 100),
+              margin: EdgeInsets.only(left: MediaQuery.of(context).size.width/3.6, right: MediaQuery.of(context).size.width/3.6),
               child: Container(
-                height: 46,
+                height: MediaQuery.of(context).size.height/,
                 child: Row(
                   children: [
                     Column(

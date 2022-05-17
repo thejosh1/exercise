@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           extendBody: true,
-          body: WelcomePage2()
+          body: WelcomePage3()
       ),
     );
   }
