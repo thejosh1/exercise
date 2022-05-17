@@ -1,4 +1,6 @@
 import 'package:exercise/pages/main_page.dart';
+import 'package:exercise/pages/product_after_page.dart';
+import 'package:exercise/pages/product_before_page.dart';
 import 'package:exercise/pages/tracking_page.dart';
 import 'package:exercise/pages/welcome_page2.dart';
 import 'package:exercise/pages/welcome_page3.dart';
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           extendBody: true,
-          body: WelcomePage3()
+          body: ProductBeforePage()
       ),
     );
   }

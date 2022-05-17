@@ -16,14 +16,18 @@ class _ProductAfterPageState extends State<ProductAfterPage> {
     return Scaffold(
       backgroundColor: Colors.grey,
       body: Container(
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20))
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(MediaQuery.of(context).size.height/36.65), bottomRight: Radius.circular(MediaQuery.of(context).size.height/36.65))
         ),
         child: Column(
           children: [
             Container(
-              margin: const EdgeInsets.only(left: 20, top: 30, right: 20),
+              margin: EdgeInsets.only(
+                left: MediaQuery.of(context).size.width/18, 
+                top: MediaQuery.of(context).size.height/24.4, 
+                right: MediaQuery.of(context).size.width/18),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   IconButton(
                       onPressed: () {},
@@ -32,10 +36,11 @@ class _ProductAfterPageState extends State<ProductAfterPage> {
                         color: Colors.white,
                       )),
                   Container(
-                    padding: const EdgeInsets.only(left: 70, right: 65),
+                    padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/5.14, 
+                    right: MediaQuery.of(context).size.width/5.54),
                     child: AppLargeText(
                       text: "Women",
-                      size: 30,
+                      size: MediaQuery.of(context).size.height/24.4,
                       color: Colors.white,
                     ),
                   ),
@@ -48,55 +53,55 @@ class _ProductAfterPageState extends State<ProductAfterPage> {
                 ],
               ),
             ),
-            const SizedBox(
-              height: 50,
+            SizedBox(
+              height: MediaQuery.of(context).size.height/14.6,
             ),
             Container(
-              margin: const EdgeInsets.only(
-                left: 20,
+              margin: EdgeInsets.only(
+                left: MediaQuery.of(context).size.width/18,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  AppLargeText(color: Colors.white, text: "Lady Hat", size: 25),
-                  const SizedBox(
-                    height: 50,
+                  AppLargeText(color: Colors.white, text: "Lady Hat", size: MediaQuery.of(context).size.height/29.3),
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/14.6,
                   ),
                   SizedBox(
-                    width: 200,
+                    width: MediaQuery.of(context).size.width/1.8,
                     child: AppText(
                       text:
                           "I would Hope that I would not have a single bit of talent left",
                       color: Colors.white,
                     ),
                   ),
-                  const SizedBox(
-                    height: 30,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/24.4,
                   ),
                   const Text(
                     "\$45",
                     style: TextStyle(
                         fontWeight: FontWeight.bold, color: Colors.white),
                   ),
-                  const SizedBox(
-                    height: 20,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/36.65,
                   ),
                   Row(
                     children: [
                       Container(
-                        width: 30,
-                        height: 30,
+                        width: MediaQuery.of(context).size.width/12,
+                        height: MediaQuery.of(context).size.height/24.4,
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.white),
                             color: Colors.red,
                             shape: BoxShape.circle),
                       ),
-                      const SizedBox(
-                        width: 10,
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width/36,
                       ),
                       Container(
-                        width: 30,
-                        height: 30,
+                        width: MediaQuery.of(context).size.height/12,
+                        height: MediaQuery.of(context).size.height/24.4,
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.white),
                             color: Colors.yellow,
@@ -106,8 +111,8 @@ class _ProductAfterPageState extends State<ProductAfterPage> {
                         width: 10,
                       ),
                       Container(
-                        width: 30,
-                        height: 30,
+                        width: MediaQuery.of(context).size.height/12,
+                        height: MediaQuery.of(context).size.height/24.4,
                         decoration: BoxDecoration(
                             border: Border.all(color: Colors.white),
                             color: Colors.blue,
@@ -115,12 +120,12 @@ class _ProductAfterPageState extends State<ProductAfterPage> {
                       ),
                     ],
                   ),
-                  const SizedBox(
-                    height: 20,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/36.65,
                   ),
                   Container(
-                    height: 100,
-                    width: 200,
+                    height: MediaQuery.of(context).size.height/7.3,
+                    width: MediaQuery.of(context).size.height/1.8,
                     color: Colors.transparent,
                     child: Row(
                       children: [
@@ -134,19 +139,19 @@ class _ProductAfterPageState extends State<ProductAfterPage> {
                                         text: "Buy Now",
                                         color: Colors.white,
                                       ),
-                                      SizedBox(height: 5,),
+                                      SizedBox(height: MediaQuery.of(context).size.height/146.7,),
                                       Container(
-                                        width: 100,
+                                        width: MediaQuery.of(context).size.width/3.6,
                                         child: const Divider(
                                           color: Colors.white,
                                         ),
                                       )
                                     ]
                                   ),
-                                  SizedBox(width: 10,),
+                                  SizedBox(width: MediaQuery.of(context).size.width/36,),
                                   Container(
-                                    height: 30,
-                                    width: 30,
+                                    height: MediaQuery.of(context).size.height/24.4,
+                                    width: MediaQuery.of(context).size.width/12,
                                     decoration: const BoxDecoration(
                                         color: Colors.white,
                                         shape: BoxShape.circle
@@ -155,7 +160,7 @@ class _ProductAfterPageState extends State<ProductAfterPage> {
                                   )
                                 ]
                               ),
-                              const SizedBox(height: 10,),
+                              SizedBox(height: MediaQuery.of(context).size.height/73,),
                               const Divider(
                               color: Colors.white,
                               )
@@ -164,21 +169,21 @@ class _ProductAfterPageState extends State<ProductAfterPage> {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 70,
+                  SizedBox(
+                    height: MediaQuery.of(context).size.height/69,
                   ),
                   Container(
-                    margin: const EdgeInsets.only(left: 20, right: 20),
+                    margin:  EdgeInsets.only(left: MediaQuery.of(context).size.width/18, right: MediaQuery.of(context).size.width/18),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Container(
-                          height: 10,
-                          width: 10,
+                          height: MediaQuery.of(context).size.height/73,
+                          width: MediaQuery.of(context).size.width/36,
                           decoration: const BoxDecoration(
                               color: Colors.white, shape: BoxShape.circle),
                         ),
-                        ResponsiveButton(width: 100,),
+                        ResponsiveButton(width: MediaQuery.of(context).size.width/3.6,),
                       ],
                     ),
                   )

@@ -15,7 +15,7 @@ class _TrackingPageState extends State<TrackingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        margin: const EdgeInsets.only(left: 30, top: 50, right: 30),
+        margin: EdgeInsets.only(left: MediaQuery.of(context).size.width/12, top: MediaQuery.of(context).size.height/14.6, right: MediaQuery.of(context).size.width/12),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -23,38 +23,38 @@ class _TrackingPageState extends State<TrackingPage> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Icon(Icons.menu),
-                AppLargeText(color: Colors.red, text: "Tracking Order", size: 30),
+                AppLargeText(color: Colors.red, text: "Tracking Order", size: MediaQuery.of(context).size.width/12),
                 const Icon(Icons.search)
               ],
             ),
-            const SizedBox(height: 30,),
+            SizedBox(height: MediaQuery.of(context).size.height/24.4,),
             Center(
               child: AppLargeText(color: Colors.black, text: "Order No. #123-456", size: 30),
             ),
-            const SizedBox(height: 10,),
+            SizedBox(height: MediaQuery.of(context).size.height/73,),
             Container(
-              height: 450,
+              height: MediaQuery.of(context).size.height/1.63,
               width: double.maxFinite,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children:  [
                   Column(
                     children: [
-                      AppText(text: "20/18", color: Colors.grey, size: 10,),
-                      AppText(text: "10:00 am", color: Colors.grey, size: 10,),
-                      const SizedBox(height: 60,),
-                      AppText(text: "20/18", color: Colors.grey, size: 10,),
-                      AppText(text: "10:00 am", color: Colors.grey, size: 10,),
-                      const SizedBox(height: 60,),
-                      AppText(text: "20/18", color: Colors.grey, size: 10,),
-                      AppText(text: "10:00 am", color: Colors.grey, size: 10,),
+                      AppText(text: "20/18", color: Colors.grey, size: MediaQuery.of(context).size.height/73,),
+                      AppText(text: "10:00 am", color: Colors.grey, size: MediaQuery.of(context).size.height/73,),
+                      SizedBox(height: MediaQuery.of(context).size.height/12.2,),
+                      AppText(text: "20/18", color: Colors.grey, size: MediaQuery.of(context).size.height/73,),
+                      AppText(text: "10:00 am", color: Colors.grey, size: MediaQuery.of(context).size.height/73,),
+                      SizedBox(height: MediaQuery.of(context).size.height/12.2,),
+                      AppText(text: "20/18", color: Colors.grey, size: MediaQuery.of(context).size.height/73,),
+                      AppText(text: "10:00 am", color: Colors.grey, size: MediaQuery.of(context).size.height/73,),
                     ],
                   ),
                   Column(
                     children: [
                       Container(
-                        height: 30,
-                        width: 30,
+                        height: MediaQuery.of(context).size.height/24.4,
+                        width: MediaQuery.of(context).size.width/12,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.grey.withOpacity(0.8),
@@ -63,9 +63,9 @@ class _TrackingPageState extends State<TrackingPage> {
                         ),
                         child: Center(
                           child: Container(
-                            height: 15,
-                            width: 15,
-                            decoration: BoxDecoration(
+                            height: MediaQuery.of(context).size.height/48.8,
+                            width: MediaQuery.of(context).size.width/24,
+                            decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.red
                             ),
@@ -73,16 +73,16 @@ class _TrackingPageState extends State<TrackingPage> {
                         ),
                       ),
                       Container(
-                        height: 50,
-                        child: const VerticalDivider(
-                          width: 20,
-                          thickness: 1.5,
+                        height: MediaQuery.of(context).size.height/14.6,
+                        child: VerticalDivider(
+                          width: MediaQuery.of(context).size.height/36.7,
+                          thickness: MediaQuery.of(context).size.width/240,
                           color: Colors.red,
                         )
                       ),
                       Container(
-                        height: 30,
-                        width: 30,
+                        height: MediaQuery.of(context).size.height/24.4,
+                        width: MediaQuery.of(context).size.width/12,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.grey.withOpacity(0.8),
@@ -91,9 +91,9 @@ class _TrackingPageState extends State<TrackingPage> {
                         ),
                         child: Center(
                           child: Container(
-                            height: 15,
-                            width: 15,
-                            decoration: BoxDecoration(
+                            height: MediaQuery.of(context).size.height/48.9,
+                            width: MediaQuery.of(context).size.width/24,
+                            decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.red
                             ),
@@ -101,16 +101,16 @@ class _TrackingPageState extends State<TrackingPage> {
                         ),
                       ),
                        Container(
-                        height: 50,
-                        child: const VerticalDivider(
-                          width: 20,
-                          thickness: 1.5,
+                        height: MediaQuery.of(context).size.height/14.6,
+                        child:  VerticalDivider(
+                          width: MediaQuery.of(context).size.height/36.65,
+                          thickness: MediaQuery.of(context).size.width/240,
                           color: Colors.red,
                         )
                       ),
                       Container(
-                        height: 30,
-                        width: 30,
+                        height: MediaQuery.of(context).size.height/24.4,
+                        width: MediaQuery.of(context).size.width/12,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.grey.withOpacity(0.8),
@@ -119,9 +119,9 @@ class _TrackingPageState extends State<TrackingPage> {
                         ),
                         child: Center(
                           child: Container(
-                            height: 15,
-                            width: 15,
-                            decoration: BoxDecoration(
+                            height: MediaQuery.of(context).size.height/48.9,
+                            width: MediaQuery.of(context).size.width/24,
+                            decoration: const BoxDecoration(
                               shape: BoxShape.circle,
                               color: Colors.red
                             ),
@@ -129,16 +129,16 @@ class _TrackingPageState extends State<TrackingPage> {
                         ),
                       ),
                       Container(
-                        height: 60,
+                        height: MediaQuery.of(context).size.height/12.2,
                         child: VerticalDivider(
-                          width: 20,
-                          thickness: 1.5,
+                          width: MediaQuery.of(context).size.height/36.65,
+                          thickness: MediaQuery.of(context).size.width/240,
                           color: Colors.grey.withOpacity(0.6),
                         ),
                       ),
                       Container(
-                        height: 30,
-                        width: 30,
+                        height: MediaQuery.of(context).size.height/24.4,
+                        width: MediaQuery.of(context).size.width/12,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.grey.withOpacity(0.6),
@@ -147,16 +147,16 @@ class _TrackingPageState extends State<TrackingPage> {
                         ),
                       ),
                       Container(
-                        height: 60,
+                        height: MediaQuery.of(context).size.height/12.2,
                         child: VerticalDivider(
-                          width: 20,
-                          thickness: 1.5,
+                          width: MediaQuery.of(context).size.height/36.65,
+                          thickness: MediaQuery.of(context).size.width/240,
                           color: Colors.grey.withOpacity(0.6),
                         ),
                       ),
                       Container(
-                        height: 30,
-                        width: 30,
+                        height: MediaQuery.of(context).size.height/24.4,
+                        width: MediaQuery.of(context).size.height/12,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           border: Border.all(color: Colors.grey.withOpacity(0.6),
@@ -170,25 +170,25 @@ class _TrackingPageState extends State<TrackingPage> {
                     child: Column(
                       children: [
                         AppText(text: "Order Signed"),
-                        const SizedBox(height: 3,),
+                        SizedBox(height: MediaQuery.of(context).size.height/244.3,),
                         AppText(text: "Melbourne Store", color: Colors.grey.withOpacity(0.6),),
-                        const SizedBox(height: 50,),
+                        SizedBox(height: MediaQuery.of(context).size.height/14.6,),
                         AppText(text: "Order Processed"),
-                        const SizedBox(height: 3,),
+                        SizedBox(height: MediaQuery.of(context).size.height/244.3,),
                         AppText(text: "Melbourne Store", color: Colors.grey.withOpacity(0.6),),
-                        const SizedBox(height: 50,),
-                         AppText(text: "Shipped"),
-                        const SizedBox(height: 3,),
+                        SizedBox(height: MediaQuery.of(context).size.height/14.6,),
+                        AppText(text: "Shipped"),
+                        SizedBox(height: MediaQuery.of(context).size.height/244.3,),
                         AppText(text: "Melbourne Store", color: Colors.grey.withOpacity(0.6),),
-                        const SizedBox(height: 50,),
-                         AppText(text: "Out for delivery"),
-                        const SizedBox(height: 3,),
+                        SizedBox(height: MediaQuery.of(context).size.height/14.6,),
+                        AppText(text: "Out for delivery"),
+                        SizedBox(height: MediaQuery.of(context).size.height/244.3,),
                         AppText(text: "Sydney AU", color: Colors.grey.withOpacity(0.6),),
-                        const SizedBox(height: 50,),
+                        SizedBox(height: MediaQuery.of(context).size.height/14.6,),
                          AppText(text: "Delivered"),
-                        const SizedBox(height: 3,),
+                        SizedBox(height: MediaQuery.of(context).size.height/244.3,),
                         AppText(text: "NSW, Sydney AU", color: Colors.grey.withOpacity(0.6),),
-                        const SizedBox(height: 30,),
+                        SizedBox(height: MediaQuery.of(context).size.height/24.4,),
                       ],
                     ),
                   )
@@ -196,9 +196,9 @@ class _TrackingPageState extends State<TrackingPage> {
               ),
             ),
             Container(
-              width: 300,
-              height: 50,
-              decoration: BoxDecoration(
+              width: MediaQuery.of(context).size.width/1.2,
+              height: MediaQuery.of(context).size.height/14.6,
+              decoration: const BoxDecoration(
                 shape: BoxShape.rectangle,
                 color: Colors.red
               ),
