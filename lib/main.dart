@@ -1,4 +1,8 @@
 import 'package:exercise/pages/main_page.dart';
+import 'package:exercise/pages/tracking_page.dart';
+import 'package:exercise/pages/welcome_page2.dart';
+import 'package:exercise/pages/welcome_page3.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,9 +22,9 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.red,
       ),
-      home: const Scaffold(
+      home: Scaffold(
           extendBody: true,
-          body: MainPage()
+          body: WelcomePage2()
       ),
     );
   }

@@ -14,16 +14,19 @@ class ResponsiveButton extends StatelessWidget {
         width: width,
         height: 60,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
-            color: Colors.red
-        ),
+            borderRadius: BorderRadius.circular(10), color: Colors.red),
         child: Row(
           children: [
-           Container(margin:const EdgeInsets.only(left: 20),
-                child: AppText(text: "Next", color: Colors.white)
-           ),
-           const SizedBox(width: 5,),
-            Icon(Icons.arrow_forward_sharp, color: Colors.white,)
+            Container(
+                margin: const EdgeInsets.only(left: 20),
+                child: AppText(text: "Next", color: Colors.white)),
+            const SizedBox(
+              width: 5,
+            ),
+            Icon(
+              Icons.arrow_forward_sharp,
+              color: Colors.white,
+            )
           ],
         ),
       ),

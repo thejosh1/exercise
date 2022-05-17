@@ -1,7 +1,7 @@
+import 'package:exercise/pages/cart_page.dart';
 import 'package:exercise/pages/home_page.dart';
 import 'package:exercise/pages/collection_page.dart';
-import 'package:exercise/pages/product_after_page.dart';
-import 'package:exercise/pages/product_before_page.dart';
+import 'package:exercise/pages/tracking_page.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -16,8 +16,8 @@ class _MainPageState extends State<MainPage> {
   var pages = [
     const HomePage(),
     const CollectionsPage(),
-    const ProductAfterPage(),
-    const ProductBeforePage()
+    TrackingPage(),
+    CartPage()
   ];
   int currentIndex = 0;
   // ignore: non_constant_identifier_names
@@ -39,7 +39,7 @@ class _MainPageState extends State<MainPage> {
         ),
         child: Container(
           decoration: const BoxDecoration(
-              border: Border(top: BorderSide(color: Colors.red))
+              //border: Border(top: BorderSide(color: Colors.red))
           ),
           child: BottomNavigationBar(
             onTap: OnTap,
