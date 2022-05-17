@@ -1,6 +1,6 @@
 import 'package:exercise/widgets/app_large_text.dart';
-import 'package:exercise/widgets/responsive_circle.dart';
 import 'package:flutter/material.dart';
+
 class ProductBeforePage extends StatefulWidget {
   const ProductBeforePage({Key? key}) : super(key: key);
 
@@ -35,26 +35,33 @@ class _ProductBeforePageState extends State<ProductBeforePage> {
               Container(
                 height: MediaQuery.of(context).size.height/2.4,
                 padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/36),
-                child: ResponsiveCircle(width: MediaQuery.of(context).size.width/36, height: MediaQuery.of(context).size.height/73,),
+                child: Container(
+                  width: MediaQuery.of(context).size.width/36,
+                  height: MediaQuery.of(context).size.height/73,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.red
+                  ),
+                )
               ),
               Expanded(child: Container()),
               Container(
-                margin: const EdgeInsets.only(right: 30),
+                margin: EdgeInsets.only(right: MediaQuery.of(context).size.width/12),
                 child: Row(
                     children:[
                       Container(
-                        height: 50,
-                        width: 50,
+                        height: MediaQuery.of(context).size.height/14.6,
+                        width: MediaQuery.of(context).size.width/7.2,
                         decoration: const BoxDecoration(
                             color: Colors.grey,
                             shape: BoxShape.circle
                         ),
                         child: const Icon(Icons.arrow_back, color: Colors.white,),
                       ),
-                      const SizedBox(width: 10,),
+                      SizedBox(width: MediaQuery.of(context).size.width/36,),
                       Container(
-                        height: 50,
-                        width: 50,
+                        height: MediaQuery.of(context).size.height/14.6,
+                        width: MediaQuery.of(context).size.width/7.2,
                         decoration: const BoxDecoration(
                           color: Colors.red,
                           shape: BoxShape.circle

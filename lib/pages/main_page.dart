@@ -32,30 +32,27 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: pages[currentIndex],
       backgroundColor: const Color(0x00ffffff),
-      bottomNavigationBar: ClipRRect(
-        borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(20),
-            topRight: Radius.circular(20)
+      bottomNavigationBar: Container(
+        decoration: BoxDecoration(
+           borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(MediaQuery.of(context).size.height/36.65),
+            topRight: Radius.circular(MediaQuery.of(context).size.height/36.65)
+          ),
         ),
-        child: Container(
-          decoration: const BoxDecoration(
-              //border: Border(top: BorderSide(color: Colors.red))
-          ),
-          child: BottomNavigationBar(
-            onTap: OnTap,
-            currentIndex: currentIndex,
-            showSelectedLabels: true,
-            showUnselectedLabels: false,
-            elevation: 0,
-            selectedItemColor: Colors.red,
-            unselectedItemColor: Colors.grey.withOpacity(0.5),
-            items: const [
-              BottomNavigationBarItem(icon: Icon(Icons.home_outlined,), label: "Home"),
-              BottomNavigationBarItem(icon: Icon(Icons.shop_2_outlined,), label:"Collections"),
-              BottomNavigationBarItem(icon: Icon(Icons.person_outlined,), label:"Product"),
-              BottomNavigationBarItem(icon: Icon(Icons.settings_outlined,), label:"Drag Animation")
-            ],
-          ),
+        child: BottomNavigationBar(
+          onTap: OnTap,
+          currentIndex: currentIndex,
+          showSelectedLabels: true,
+          showUnselectedLabels: false,
+          elevation: 0,
+          selectedItemColor: Colors.red,
+          unselectedItemColor: Colors.grey.withOpacity(0.5),
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.home_outlined,), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.shop_2_outlined,), label:"Collections"),
+            BottomNavigationBarItem(icon: Icon(Icons.person_outlined,), label:"Product"),
+            BottomNavigationBarItem(icon: Icon(Icons.settings_outlined,), label:"Drag Animation")
+          ],
         ),
       ),
     );

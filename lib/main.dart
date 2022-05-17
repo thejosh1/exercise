@@ -1,3 +1,5 @@
+import 'package:exercise/pages/drag_animations.dart';
+import 'package:exercise/pages/home_page.dart';
 import 'package:exercise/pages/main_page.dart';
 import 'package:exercise/pages/product_after_page.dart';
 import 'package:exercise/pages/product_before_page.dart';
@@ -26,7 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           extendBody: true,
-          body: ProductBeforePage()
+          body:DragAnimations()
       ),
     );
   }

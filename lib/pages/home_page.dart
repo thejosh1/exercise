@@ -18,30 +18,30 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
       body: Column(
         children: [
           Container(
-            margin: const EdgeInsets.only(left:20, top:40, right:30),
-            //height: double.maxFinite,
-            //width: double.maxFinite,
+            margin: EdgeInsets.only(
+              left:MediaQuery.of(context).size.width/18, 
+              top: MediaQuery.of(context).size.height/18.3, 
+              right:MediaQuery.of(context).size.width/36),
             child: Row(
               children: [
                 const Icon(Icons.menu),
                 Container(
-                  margin: const EdgeInsets.only(left: 60, right: 60),
-                  child: AppLargeText(text: 'Discover', size: 30, color: Colors.red,),
+                  margin: EdgeInsets.only(left: MediaQuery.of(context).size.width/6, right: MediaQuery.of(context).size.width/6),
+                  child: AppLargeText(text: 'Discover', size: MediaQuery.of(context).size.height/24.4, color: Colors.red,),
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Icon(Icons.search_outlined),
-                    SizedBox(width: 10,),
-                    Icon(Icons.filter)
+                  children: [
+                    const Icon(Icons.search_outlined),
+                    SizedBox(width: MediaQuery.of(context).size.width/36,),
+                    const Icon(Icons.filter)
                   ]
                 )
               ],
             )
           ),
-          const SizedBox(height: 10,),
+          SizedBox(height: MediaQuery.of(context).size.height/73,),
           Container(
-            margin: const EdgeInsets.only(left: 20, right: 20),
             child: TabBar(
               controller: _tabController,
               labelColor: Colors.black87,
@@ -57,15 +57,13 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           ),
           Expanded(
             child: Container(
-              padding: const EdgeInsets.only(left: 20, right: 20),
-              //height: 300,
-              //width: double.maxFinite,
+              padding: EdgeInsets.only(left: MediaQuery.of(context).size.width/18, right: MediaQuery.of(context).size.width/18),
               child: TabBarView(
                 controller: _tabController,
                 children: [
                   SizedBox(
-                    height:200,
-                    width: 200,
+                    height:MediaQuery.of(context).size.height/3.7,
+                    width: MediaQuery.of(context).size.width/1.8,
                     child: ListView.builder(
                         itemCount: 4,
                         scrollDirection: Axis.vertical,
@@ -74,23 +72,23 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               SizedBox(
-                                width: 150,
-                                height: 200,
+                                width: MediaQuery.of(context).size.width/2.4,
+                                height: MediaQuery.of(context).size.height/3.7,
                                 child: Column(
                                   children: [
                                     AppText(text: "White Dress"),
-                                    const SizedBox(height: 10,),
+                                    SizedBox(height: MediaQuery.of(context).size.height/73,),
                                     AppText(text: "\$15", color: Colors.red,),
-                                    const SizedBox(height: 60,),
+                                    SizedBox(height: MediaQuery.of(context).size.height/12.2,),
                                     Container(
-                                      height: 50,
-                                      width: 100,
+                                      height: MediaQuery.of(context).size.height/14,
+                                      width: MediaQuery.of(context).size.width/3.6,
                                       color: Colors.grey.withOpacity(0.5),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.end,
                                         children: [
                                           Icon(Icons.shopping_basket, color: Colors.red[800],),
-                                          const SizedBox(height: 2,),
+                                          SizedBox(height: MediaQuery.of(context).size.height/367,),
                                           const Icon(Icons.favorite_outline)
                                         ],
                                       ),
@@ -99,23 +97,23 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 ),
                               ),
                               Container(
-                                width: 150,
-                                height: 200,
+                                width: MediaQuery.of(context).size.width/2.4,
+                                height: MediaQuery.of(context).size.height/3.7,
                                 child: Column(
                                   children: [
                                     AppText(text: "Red Dress"),
-                                    const SizedBox(height: 10,),
+                                    SizedBox(height: MediaQuery.of(context).size.height/73,),
                                     AppText(text: "\$15", color: Colors.red,),
-                                    const SizedBox(height: 60,),
+                                    SizedBox(height: MediaQuery.of(context).size.height/12.2),
                                     Container(
-                                      height: 50,
-                                      width: 100,
+                                      height: MediaQuery.of(context).size.height/14,
+                                      width: MediaQuery.of(context).size.width/3.6,
                                       color: Colors.grey.withOpacity(0.5),
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.end,
                                         children: [
                                           Icon(Icons.shopping_basket, color: Colors.red[800],),
-                                          const SizedBox(height: 2,),
+                                          SizedBox(height: MediaQuery.of(context).size.height/367,),
                                           const Icon(Icons.favorite_outline)
                                         ],
                                       ),

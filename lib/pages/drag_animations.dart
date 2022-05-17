@@ -17,7 +17,7 @@ class _DragAnimationsState extends State<DragAnimations> {
         body: Column(
             children: [
               Container(
-          margin: const EdgeInsets.only(
+          margin:  EdgeInsets.only(
             left: 20,
             top: 30,
           ),
